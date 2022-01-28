@@ -1,0 +1,50 @@
+.navbar-brand {
+    font-family: Gill Sans, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.navbar-brand:hover {
+    color: black;
+}
+.nav-link {
+    font-family: Gill Sans, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.header {
+    font-family: Gill Sans, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.row {
+    justify-content: center;
+}
+.title, .list {
+    font-family: Gill Sans, sans-serif;
+    text-align: center;
+}
+.book-btn, .btn, #search {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+.book-btn:hover, #search:hover {
+    background-color: grey;
+}
+#date {
+    margin-bottom: 40px;
+}
+#end-time {
+    margin-bottom: 40px;
+}
+.container {
+    text-align: center;
+}

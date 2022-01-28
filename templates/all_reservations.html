@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock %}
+
+{% block head %} {% endblock %}
+
+{% block body %}
+<h1 class="header">Your Booked Reservations</h1>
+<div class="row">
+    <div class="col-12">
+        <ul class="list">
+    {% for reservation in reservations %}
+        {% if reservation.start_time == 1 %}
+            <li class="list">Date: {{ reservation.date }} at 12:00am</li>
+        {% elif reservation.start_time == 2 %}
+            <li class="list">Date: {{ reservation.date }} at 12:30am</li>
+        {% elif reservation.start_time == 3 %}
+            <li class="list">Date: {{ reservation.date }} at 1:00am</li>
+        {% elif reservation.start_time == 4 %}
+            <li class="list">Date: {{ reservation.date }} at 1:30am</li>
+        {% elif reservation.start_time == 5 %}
+            <li class="list">Date: {{ reservation.date }} at 2:00am</li>
+        {% elif reservation.start_time == 6 %}
+            <li class="list">Date: {{ reservation.date }} at 2:30am</li>
+        {% elif reservation.start_time == 7 %}
+            <li class="list">Date: {{ reservation.date }} at 3:00am</li>
+        {% elif reservation.start_time == 8 %}
+            <li class="list">Date: {{ reservation.date }} at 3:30am</li>
+        {% elif reservation.start_time == 9 %}
+            <li class="list">Date: {{ reservation.date }} at 4:00am</li>
+        {% elif reservation.start_time == 10 %}
+            <li class="list">Date: {{ reservation.date }} at 4:30am</li>
+        {% elif reservation.start_time == 11 %}
+            <li class="list">Date: {{ reservation.date }} at 5:00am</li>
+        {% elif reservation.start_time == 12 %}
+            <li class="list">Date: {{ reservation.date }} at 5:30am</li>
+        {% elif reservation.start_time == 13 %}
+            <li class="list">Date: {{ reservation.date }} at 6:00am</li>
+        {% elif reservation.start_time == 14 %}
+            <li class="list">Date: {{ reservation.date }} at 6:30am</li>
+        {% elif reservation.start_time == 15 %}
+            <li class="list">Date: {{ reservation.date }} at 7:00am</li>
+        {% elif reservation.start_time == 16 %}
+            <li class="list">Date: {{ reservation.date }} at 7:30am</li>
+        {% elif reservation.start_time == 17 %}
+            <li class="list">Date: {{ reservation.date }} at 8:00am</li>
+        {% elif reservation.start_time == 18 %}
+            <li class="list">Date: {{ reservation.date }} at 8:30am</li>    
+        {% elif reservation.start_time == 19 %}
+            <li class="list">Date: {{ reservation.date }} at 9:00am</li>
+        {% elif reservation.start_time == 20 %}
+            <li class="list">Date: {{ reservation.date }} at 9:30am</li>
+        {% elif reservation.start_time == 21 %}
+            <li class="list">Date: {{ reservation.date }} at 10:00am</li>
+        {% elif reservation.start_time == 22 %}
+            <li class="list">Date: {{ reservation.date }} at 10:30am</li>
+        {% elif reservation.start_time == 23 %}
+            <li class="list">Date: {{ reservation.date }} at 11:00am</li>
+        {% elif reservation.start_time == 24 %}
+            <li class="list">Date: {{ reservation.date }} at 11:30am</li>
+        {% elif reservation.start_time == 25 %}
+            <li class="list">Date: {{ reservation.date }} at 12:00pm</li>
+        {% elif reservation.start_time == 26 %}
+            <li class="list">Date: {{ reservation.date }} at 12:30pm</li>
+        {% elif reservation.start_time == 27 %}
+            <li class="list">Date: {{ reservation.date }} at 1:00pm</li>
+        {% elif reservation.start_time == 28 %}
+            <li class="list">Date: {{ reservation.date }} at 1:30pm</li>
+        {% elif reservation.start_time == 29 %}
+            <li class="list">Date: {{ reservation.date }} at 2:00pm</li>
+        {% elif reservation.start_time == 30 %}
+            <li class="list">Date: {{ reservation.date }} at 2:30pm</li>
+        {% elif reservation.start_time == 31 %}
+            <li class="list">Date: {{ reservation.date }} at 3:00pm</li>
+        {% elif reservation.start_time == 32 %}
+            <li class="list">Date: {{ reservation.date }} at 3:30pm</li>
+        {% elif reservation.start_time == 33 %}
+            <li class="list">Date: {{ reservation.date }} at 4:00pm</li>
+        {% elif reservation.start_time == 34 %}
+            <li class="list">Date: {{ reservation.date }} at 4:30pm</li>
+        {% elif reservation.start_time == 35 %}
+            <li class="list">Date: {{ reservation.date }} at 5:00pm</li>
+        {% elif reservation.start_time == 36 %}
+            <li class="list">Date: {{ reservation.date }} at 5:30pm</li>
+        {% elif reservation.start_time == 37 %}
+            <li class="list">Date: {{ reservation.date }} at 6:00pm</li>
+        {% elif reservation.start_time == 38 %}
+            <li class="list">Date: {{ reservation.date }} at 6:30pm</li>
+        {% elif reservation.start_time == 39 %}
+            <li class="list">Date: {{ reservation.date }} at 7:00pm</li>
+        {% elif reservation.start_time == 40 %}
+            <li class="list">Date: {{ reservation.date }} at 7:30pm</li>
+        {% elif reservation.start_time == 41 %}
+            <li class="list">Date: {{ reservation.date }} at 8:00pm</li>
+        {% elif reservation.start_time == 42 %}
+            <li class="list">Date: {{ reservation.date }} at 8:30pm</li>
+        {% elif reservation.start_time == 43 %}
+            <li class="list">Date: {{ reservation.date }} at 9:00pm</li>
+        {% elif reservation.start_time == 44 %}
+            <li class="list">Date: {{ reservation.date }} at 9:30pm</li>
+        {% elif reservation.start_time == 45 %}
+            <li class="list">Date: {{ reservation.date }} at 10:00pm</li>
+        {% elif reservation.start_time == 46 %}
+            <li class="list">Date: {{ reservation.date }} at 10:30pm</li>
+        {% elif reservation.start_time == 47 %}
+            <li class="list">Date: {{ reservation.date }} at 11:00pm</li>
+        {% elif reservation.start_time == 48 %}
+            <li class="list">Date: {{ reservation.date }} at 11:30pm</li>
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+
+{% endblock %}
+
+{% block script %}
+<script src="/static/js/book_reservations.js"></script>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock %}
+
+{% block head %} {% endblock %}
+
+{% block body %}
+<h1 class="header">Schedule a Melon Tasting!</h1>
+<div class="container">
+  <div class="row">
+    <!-- <div class="col-lg-6 col-md-12">
+      <img src="/static/img/melon1.jpg">
+    </div> -->
+    <div class="col-lg-6 col-md-12">
+      <form>
+        <h5 class="title">Enter the date of the reservation you would like:</h5>
+          <input id="date" type="date" required></input></br>
+        <h5 class="title">Enter an optional time range 
+          and we will only show appointments in that range</h5>
+          <!-- <p>Start time:</p>
+            <input id="start-time" type="time" step="1800"></input></br> -->
+            <select name="time" id="start-time">
+              <option value="0">Start Time</option>
+              <option value="1">12:00am</option>
+              <option value="2">12:30am</option>
+              <option value="3">1:00am</option>
+              <option value="4">1:30am</option>
+              <option value="5">2:00am</option>
+              <option value="6">2:30am</option>
+              <option value="7">3:00am</option>
+              <option value="8">3:30am</option>
+              <option value="9">4:00am</option>
+              <option value="10">4:30am</option>
+              <option value="11">5:00am</option>
+              <option value="12">5:30am</option>
+              <option value="13">6:00am</option>
+              <option value="14">6:30am</option>
+              <option value="15">7:00am</option>
+              <option value="16">7:30am</option>
+              <option value="17">8:00am</option>
+              <option value="18">8:30am</option>
+              <option value="19">9:00am</option>
+              <option value="20">9:30am</option>
+              <option value="21">10:00am</option>
+              <option value="22">10:30am</option>
+              <option value="23">11:00am</option>
+              <option value="24">11:30am</option>
+              <option value="25">12:00pm</option>
+              <option value="26">12:30pm</option>
+              <option value="27">1:00pm</option>
+              <option value="28">1:30pm</option>
+              <option value="29">2:00pm</option>
+              <option value="30">2:30pm</option>
+              <option value="31">3:00pm</option>
+              <option value="32">3:30pm</option>
+              <option value="33">4:00pm</option>
+              <option value="34">4:30pm</option>
+              <option value="35">5:00pm</option>
+              <option value="36">5:30pm</option>
+              <option value="37">6:00pm</option>
+              <option value="38">6:30pm</option>
+              <option value="39">7:00pm</option>
+              <option value="40">7:30pm</option>
+              <option value="41">8:00pm</option>
+              <option value="42">8:30pm</option>
+              <option value="43">9:00pm</option>
+              <option value="44">9:30pm</option>
+              <option value="45">10:00pm</option>
+              <option value="46">10:30pm</option>
+              <option value="47">11:00pm</option>
+              <option value="48">11:30pm</option>
+            </select>
+          <!-- <p>End time:</p>
+            <input id="end-time" type="time" step="1800"></isnput></br> -->
+            <select name="time" id="end-time">
+              <option value="0">End Time</option>
+              <option value="1">12:00am</option>
+              <option value="2">12:30am</option>
+              <option value="3">1:00am</option>
+              <option value="4">1:30am</option>
+              <option value="5">2:00am</option>
+              <option value="6">2:30am</option>
+              <option value="7">3:00am</option>
+              <option value="8">3:30am</option>
+              <option value="9">4:00am</option>
+              <option value="10">4:30am</option>
+              <option value="11">5:00am</option>
+              <option value="12">5:30am</option>
+              <option value="13">6:00am</option>
+              <option value="14">6:30am</option>
+              <option value="15">7:00am</option>
+              <option value="16">7:30am</option>
+              <option value="17">8:00am</option>
+              <option value="18">8:30am</option>
+              <option value="19">9:00am</option>
+              <option value="20">9:30am</option>
+              <option value="21">10:00am</option>
+              <option value="22">10:30am</option>
+              <option value="23">11:00am</option>
+              <option value="24">11:30am</option>
+              <option value="25">12:00pm</option>
+              <option value="26">12:30pm</option>
+              <option value="27">1:00pm</option>
+              <option value="28">1:30pm</option>
+              <option value="29">2:00pm</option>
+              <option value="30">2:30pm</option>
+              <option value="31">3:00pm</option>
+              <option value="32">3:30pm</option>
+              <option value="33">4:00pm</option>
+              <option value="34">4:30pm</option>
+              <option value="35">5:00pm</option>
+              <option value="36">5:30pm</option>
+              <option value="37">6:00pm</option>
+              <option value="38">6:30pm</option>
+              <option value="39">7:00pm</option>
+              <option value="40">7:30pm</option>
+              <option value="41">8:00pm</option>
+              <option value="42">8:30pm</option>
+              <option value="43">9:00pm</option>
+              <option value="44">9:30pm</option>
+              <option value="45">10:00pm</option>
+              <option value="46">10:30pm</option>
+              <option value="47">11:00pm</option>
+              <option value="48">11:30pm</option>
+            </select></br>
+          <button id="search">Search</button>
+      </form>
+      <div class="row available-times"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="/static/js/book_reservations.js"></script>
+{% endblock %}
